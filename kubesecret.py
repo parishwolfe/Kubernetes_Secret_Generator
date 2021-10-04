@@ -12,9 +12,9 @@ options = parser.parse_args()
 output = f"""apiVersion: v1
 kind: Secret
 metadata:
-    name: {options.name}\n"""
+  name: {options.name}\n"""
 if options.namespace:
-    output += f"""    namespace: {options.namespace}\n"""
+    output += f"""  namespace: {options.namespace}\n"""
 output += """type: Opaque
 data:
 """
